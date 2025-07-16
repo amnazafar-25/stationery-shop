@@ -59,7 +59,7 @@ body.dark .logo i {
 }
 
 .hero {
-  background: url('../images/stationery-hero.jpg') no-repeat center center/cover;
+  background: url('images/bg-final.jpg') no-repeat center center/cover;
   height: 500px;
   display: flex;
   align-items: center;
