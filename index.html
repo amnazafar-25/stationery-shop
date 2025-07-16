@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pastel Stationery Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <i class="fas fa-heart"></i>
+      <h1>Pastel Stationery</h1>
+    </div>
+    <div class="header-right">
+      <button id="cart-toggle"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></button>
+    </div>
+  </header>
+  <section class="hero" data-aos="fade-up">
+    <div class="hero-content">
+      <h1>Dream. Plan. Create.</h1>
+      <p>Pastel Tools for Bright Ideas</p>
+      <a href="index.html" class="hero-btn">Shop Now</a>
+    </div>
+  </section>
+  <section class="filters" data-aos="fade-up">
+    <input type="text" id="search-bar" placeholder="Search stationery..." />
+    <div class="categories">
+      <button class="filter-btn" data-category="all">All</button>
+      <button class="filter-btn" data-category="notebook">Notebooks</button>
+      <button class="filter-btn" data-category="pen">Pens</button>
+      <button class="filter-btn" data-category="sticky">Sticky Notes</button>
+      <button class="filter-btn" data-category="clip">Clips</button>
+      <button class="filter-btn" data-category="tape">Tapes</button>
+    </div>
+  </section>
+  <main class="product-grid" data-aos="fade-up">
+    <div class="product-card" data-id="1" data-category="notebook" data-name="Floral Notebook">
+      <img src="images/notebook.jpg" alt="Notebook" />
+      <h3>Floral Notebook</h3>
+      <p>$8.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="2" data-category="tape" data-name="Galaxy Washi Tape">
+      <img src="images/glaxy.jpg" alt="Galaxy Washi Tape" />
+      <h3>Galaxy Washi Tape</h3>
+      <p>$3.75</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card" data-id="3" data-category="pen" data-name="Pastel Gel Pens">
+      <img src="images/gelpens.jpg" alt="Gel Pens" />
+      <h3>Pastel Gel Pens</h3>
+      <p>$5.49</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card" data-id="4" data-category="tape" data-name="Cute Washi Tapes">
+      <img src="images/washitapes.jpg" alt="Washi Tapes" />
+      <h3>Cute Washi Tapes</h3>
+      <p>$4.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card" data-id="5" data-category="clip" data-name="Transparent Binder Clips">
+      <img src="images/transparent.jpg" alt="Transparent Binder Clips" />
+      <h3>Transparent Binder Clips</h3>
+      <p>$2.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="6" data-category="sticky" data-name="Sticker Pack">
+      <img src="images/stickers.jph.jpg" alt="Stickers" />
+      <h3>Sticker Pack</h3>
+      <p>$3.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card" data-id="7" data-category="notebook" data-name="Mini Journal">
+      <img src="images/minijournal.jpg" alt="Mini Journal" />
+      <h3>Mini Journal</h3>
+      <p>$6.49</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card" data-id="8" data-category="clip" data-name="Paper Clips Set">
+      <img src="images/paperclipset.jpg" alt="Paper Clips" />
+      <h3>Paper Clips Set</h3>
+      <p>$2.49</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card" data-id="9" data-category="sticky" data-name="Colorful Notepad">
+      <img src="images/colorful.jpg" alt="Notepad" />
+      <h3>Colorful Notepad</h3>
+      <p>$4.79</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card" data-id="10" data-category="clip" data-name="Binder Clips">
+      <img src="images/binderclips.jpg" alt="Binder Clips" />
+      <h3>Binder Clips</h3>
+      <p>$2.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card" data-id="11" data-category="pen" data-name="Aesthetic Highlighters">
+      <img src="/images/highlighterss.jpg" alt="Highlighters" />
+      <h3>Aesthetic Highlighters</h3>
+      <p>$7.29</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card" data-id="12" data-category="sticky" data-name="Pastel Sticky Notes">
+      <img src="/images/sticky.jpg" alt="Sticky Notes" />
+      <h3>Pastel Sticky Notes</h3>
+      <p>$3.79</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="13" data-category="notebook" data-name="Dreamy Cloud Notebook">
+      <img src="/images/dreamy.jpg" alt="Dreamy Cloud Notebook" />
+      <h3>Dreamy Cloud Notebook</h3>
+      <p>$4.75</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card" data-id="14" data-category="sticky" data-name="Star Shaped Sticky Notes">
+      <img src="/images/star.jpg" alt="Star Sticky Notes" />
+      <h3>Star Shaped Sticky Notes</h3>
+      <p>$3.10</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="15" data-category="tape" data-name="Glitter Tape Collection">
+      <img src="/images/gliter.jpg" alt="Glitter Tape" />
+      <h3>Glitter Tape Collection</h3>
+      <p>$4.75</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="16" data-category="notebook" data-name="Kawaii Animal Sketchbook">
+      <img src="/images/kawai.jpg" alt="Kawaii Animal Sketchbook" />
+      <h3>Kawaii Animal Sketchbook</h3>
+      <p>$6.50</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="17" data-category="pen" data-name="Pastel Brush Pens">
+      <img src="/images/brush.jpg" alt="Pastel Brush Pens" />
+      <h3>Pastel Brush Pens</h3>
+      <p>$4.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="18" data-category="pen" data-name="Fine Liner Set">
+      <img src="/images/liner.jpg" alt="Fine Liner Set" />
+      <h3>Fine Liner Set</h3>
+      <p>$3.85</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="19" data-category="sticky" data-name="Pastel Cloud Notes">
+      <img src="/images/cloud.jpg" alt="Pastel Cloud Notes" />
+      <h3>Pastel Cloud Notes</h3>
+      <p>$2.95</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="20" data-category="clip" data-name="Rose Gold Clips">
+      <img src="/images/gold.jpg" alt="Rose Gold Clips" />
+      <h3>Rose Gold Clips</h3>
+      <p>$2.49</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="21" data-category="clip" data-name="Mini Pastel Clips">
+      <img src="/images/miniclips.jpg" alt="Mini Pastel Clips" />
+      <h3>Mini Pastel Clips</h3>
+      <p>$1.89</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="22" data-category="tape" data-name="Pastel Rainbow Tape">
+      <img src="/images/rainbow.jpg" alt="Pastel Rainbow Tape" />
+      <h3>Pastel Rainbow Tape</h3>
+      <p>$3.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="23" data-category="notebook" data-name="Vintage Spiral Notebook">
+      <img src="/images/vintage.jpg" alt="Vintage Spiral Notebook" />
+      <h3>Vintage Spiral Notebook</h3>
+      <p>$5.25</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="24" data-category="tape" data-name="Floral Tape Set">
+      <img src="images/floral.jpg" alt="Floral Tape" />
+      <h3>Floral Tape Set</h3>
+      <p>$4.25</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="25" data-category="pen" data-name="Dual Tip Pastel Markers">
+      <img src="/images/dual.jpg" alt="Pastel Markers" />
+      <h3>Dual Tip Pastel Markers</h3>
+      <p>$4.25</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </main>
+  <div id="toast" class="toast">Item added to cart!</div>
+  <div class="cart-modal" id="cart-modal">
+    <div class="cart-content">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button id="close-cart" title="Close"><i class="fas fa-times"></i></button>
+      </div>
+      <ul class="cart-items"></ul>
+      <div class="cart-footer">
+        <p class="total">Total: $<span id="cart-total">0.00</span></p>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>© 2025 Pastel Stationery. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-dribbble"></i></a>
+        <a href="#"><i class="fab fa-behance"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+
+
+
+</body>
