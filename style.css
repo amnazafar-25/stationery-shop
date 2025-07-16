@@ -1,6 +1,5 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
 :root {
   --primary: #a652aa;
   --secondary: #87a9ab;
@@ -12,21 +11,25 @@
   --text-light: #fff;
   --gradient: linear-gradient(135deg, #f7d4ea, #b09fd6);
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background: var(--gradient);
   color: var(--text-dark);
   transition: all 0.3s ease;
 }
+
 body.dark {
   background: #222;
   color: var(--text-light);
 }
+
 header {
   background: var(--primary);
   color: white;
@@ -36,24 +39,28 @@ header {
   align-items: center;
   flex-wrap: wrap;
 }
+
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .logo i {
   background: #fff;
   color: var(--primary);
   border-radius: 50%;
   padding: 8px;
 }
+
 body.dark .logo i {
   background: #222;
   color: var(--bright-pink);
 }
+
 .hero {
-  background: url('images/background.jpg') no-repeat center center/cover;
-  height: 500px; 
+  background: url('../images/background.jpg') no-repeat center center/cover;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,6 +68,7 @@ body.dark .logo i {
   padding: 20px;
   position: relative;
 }
+
 .hero::after {
   content: "";
   position: absolute;
@@ -68,7 +76,7 @@ body.dark .logo i {
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(4px); 
+  backdrop-filter: blur(4px);
   background: rgba(255, 255, 255, 0.3);
   z-index: 1;
 }
@@ -120,6 +128,7 @@ body.dark .logo i {
   cursor: pointer;
   position: relative;
 }
+
 #cart-count {
   background: red;
   color: white;
@@ -130,12 +139,14 @@ body.dark .logo i {
   top: -8px;
   right: -10px;
 }
+
 .filters {
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 #search-bar {
   padding: 10px;
   width: 90%;
@@ -143,6 +154,7 @@ body.dark .logo i {
   border-radius: 6px;
   border: 1px solid #ccc;
 }
+
 .categories {
   margin-top: 10px;
   display: flex;
@@ -150,6 +162,7 @@ body.dark .logo i {
   justify-content: center;
   gap: 10px;
 }
+
 .filter-btn {
   padding: 8px 15px;
   background: var(--soft-purple);
@@ -158,12 +171,14 @@ body.dark .logo i {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   padding: 20px;
 }
+
 .product-card {
   background: var(--light);
   border-radius: 8px;
@@ -171,15 +186,18 @@ body.dark .logo i {
   text-align: center;
   transition: transform 0.2s ease;
 }
+
 .product-card:hover {
   transform: scale(1.03);
 }
+
 .product-card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
   border-radius: 6px;
 }
+
 .product-card button {
   margin-top: 10px;
   padding: 8px 12px;
@@ -189,6 +207,7 @@ body.dark .logo i {
   border-radius: 5px;
   cursor: pointer;
 }
+
 /* Cart Modal */
 .cart-modal {
   position: fixed;
@@ -252,7 +271,7 @@ body.dark .logo i {
   margin-bottom: 10px;
   font-size: 0.95rem;
   color: #444;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .cart-items li span {
@@ -288,6 +307,7 @@ body.dark .logo i {
   transform: scale(0.95);
   background-color: #944f9f;
 }
+
 .toast {
   position: fixed;
   bottom: 30px;
@@ -302,10 +322,12 @@ body.dark .logo i {
   z-index: 999;
   font-weight: 500;
 }
+
 .toast.show {
   opacity: 1;
   bottom: 50px;
 }
+
 .site-footer {
   background: linear-gradient(to right, #f7d4ea, #fff5fc);
   padding: 20px;
@@ -340,18 +362,20 @@ body.dark .logo i {
   .header-right {
     margin-top: 10px;
   }
+
   .filters {
     padding: 15px;
   }
 }
+
 @media (max-width: 768px) {
   .categories {
     flex-direction: column;
   }
+
   header {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
 }
-
